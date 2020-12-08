@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B42CF0CF257E85F800F0B914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CF0CE257E85F800F0B914 /* AppDelegate.swift */; };
 		B42CF0D1257E85F800F0B914 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CF0D0257E85F800F0B914 /* SceneDelegate.swift */; };
-		B42CF0D3257E85F800F0B914 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CF0D2257E85F800F0B914 /* ViewController.swift */; };
+		B42CF0D3257E85F800F0B914 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CF0D2257E85F800F0B914 /* BalanceViewController.swift */; };
 		B42CF0D6257E85F800F0B914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42CF0D4257E85F800F0B914 /* Main.storyboard */; };
 		B42CF0D8257E85F900F0B914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42CF0D7257E85F900F0B914 /* Assets.xcassets */; };
 		B42CF0DB257E85F900F0B914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42CF0D9257E85F900F0B914 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		B42CF0CB257E85F800F0B914 /* Bank App 2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank App 2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42CF0CE257E85F800F0B914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B42CF0D0257E85F800F0B914 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B42CF0D2257E85F800F0B914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B42CF0D2257E85F800F0B914 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		B42CF0D5257E85F800F0B914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B42CF0D7257E85F900F0B914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42CF0DA257E85F900F0B914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,13 +56,13 @@
 		B42CF0CD257E85F800F0B914 /* Bank App 2020 */ = {
 			isa = PBXGroup;
 			children = (
+				B42CF0DC257E85F900F0B914 /* Info.plist */,
 				B42CF0CE257E85F800F0B914 /* AppDelegate.swift */,
+				B42CF0D2257E85F800F0B914 /* BalanceViewController.swift */,
 				B42CF0D0257E85F800F0B914 /* SceneDelegate.swift */,
-				B42CF0D2257E85F800F0B914 /* ViewController.swift */,
-				B42CF0D4257E85F800F0B914 /* Main.storyboard */,
 				B42CF0D7257E85F900F0B914 /* Assets.xcassets */,
 				B42CF0D9257E85F900F0B914 /* LaunchScreen.storyboard */,
-				B42CF0DC257E85F900F0B914 /* Info.plist */,
+				B42CF0D4257E85F800F0B914 /* Main.storyboard */,
 			);
 			path = "Bank App 2020";
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42CF0D3257E85F800F0B914 /* ViewController.swift in Sources */,
+				B42CF0D3257E85F800F0B914 /* BalanceViewController.swift in Sources */,
 				B42CF0CF257E85F800F0B914 /* AppDelegate.swift in Sources */,
 				B42CF0D1257E85F800F0B914 /* SceneDelegate.swift in Sources */,
 			);
