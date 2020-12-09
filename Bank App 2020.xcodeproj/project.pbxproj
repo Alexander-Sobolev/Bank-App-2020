@@ -15,6 +15,8 @@
 		B42CF0DB257E85F900F0B914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42CF0D9257E85F900F0B914 /* LaunchScreen.storyboard */; };
 		B4D7EF032580E53A006BCDB7 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7EF022580E53A006BCDB7 /* LoanViewController.swift */; };
 		B4D7EF0925810210006BCDB7 /* ExelFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7EF0825810210006BCDB7 /* ExelFormulas.swift */; };
+		B4D7EF0E25811CD6006BCDB7 /* ScreenshotOne.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D7EF0C25811CD6006BCDB7 /* ScreenshotOne.png */; };
+		B4D7EF0F25811CD6006BCDB7 /* ScreenshotTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D7EF0D25811CD6006BCDB7 /* ScreenshotTwo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B42CF0DC257E85F900F0B914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D7EF022580E53A006BCDB7 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
 		B4D7EF0825810210006BCDB7 /* ExelFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExelFormulas.swift; sourceTree = "<group>"; };
+		B4D7EF0C25811CD6006BCDB7 /* ScreenshotOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenshotOne.png; sourceTree = "<group>"; };
+		B4D7EF0D25811CD6006BCDB7 /* ScreenshotTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenshotTwo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		B42CF0CD257E85F800F0B914 /* Bank App 2020 */ = {
 			isa = PBXGroup;
 			children = (
+				B4D7EF0B25811C8B006BCDB7 /* Screenshots */,
 				B42CF0CE257E85F800F0B914 /* AppDelegate.swift */,
 				B42CF0D7257E85F900F0B914 /* Assets.xcassets */,
 				B42CF0DC257E85F900F0B914 /* Info.plist */,
@@ -79,6 +84,15 @@
 				B4D7EF022580E53A006BCDB7 /* LoanViewController.swift */,
 			);
 			path = ViewConrollers;
+			sourceTree = "<group>";
+		};
+		B4D7EF0B25811C8B006BCDB7 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				B4D7EF0C25811CD6006BCDB7 /* ScreenshotOne.png */,
+				B4D7EF0D25811CD6006BCDB7 /* ScreenshotTwo.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D7EF0E25811CD6006BCDB7 /* ScreenshotOne.png in Resources */,
+				B4D7EF0F25811CD6006BCDB7 /* ScreenshotTwo.png in Resources */,
 				B42CF0DB257E85F900F0B914 /* LaunchScreen.storyboard in Resources */,
 				B42CF0D8257E85F900F0B914 /* Assets.xcassets in Resources */,
 				B42CF0D6257E85F800F0B914 /* Main.storyboard in Resources */,
