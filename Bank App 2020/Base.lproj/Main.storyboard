@@ -49,31 +49,40 @@
         <!--Loan-->
         <scene sceneID="Ak1-ZR-gnl">
             <objects>
-                <viewController id="kjq-3L-bAd" sceneMemberID="viewController">
+                <viewController id="kjq-3L-bAd" customClass="LoanViewController" customModule="Bank_App_2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FfZ-N5-l2b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="IFO-cd-n9W">
-                                <rect key="frame" x="16" y="331" width="382" height="234.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IFO-cd-n9W">
+                                <rect key="frame" x="16" y="52.000000000000014" width="382" height="225.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount of credit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WMt-cn-RqB">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="fieldEditingChanged:" destination="kjq-3L-bAd" eventType="editingChanged" id="rfo-hk-O9i"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period (month)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hi4-jF-kJd">
-                                        <rect key="frame" x="0.0" y="59" width="382" height="40"/>
+                                        <rect key="frame" x="0.0" y="56" width="382" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="fieldEditingChanged:" destination="kjq-3L-bAd" eventType="editingChanged" id="cWE-bZ-cTD"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Annual Percentage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFL-fB-E0W">
-                                        <rect key="frame" x="0.0" y="118" width="382" height="40"/>
+                                        <rect key="frame" x="0.0" y="112" width="382" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="fieldEditingChanged:" destination="kjq-3L-bAd" eventType="editingChanged" id="GMd-69-V72"/>
+                                        </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly payment          888888888,88 $ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Df-UZ-WDs">
-                                        <rect key="frame" x="0.0" y="177" width="382" height="57.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly payment - 888888888,88 $ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Df-UZ-WDs">
+                                        <rect key="frame" x="0.0" y="168" width="382" height="57.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -84,12 +93,18 @@
                         <viewLayoutGuide key="safeArea" id="dp7-OF-8DF"/>
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IFO-cd-n9W" firstAttribute="centerY" secondItem="FfZ-N5-l2b" secondAttribute="centerY" id="2ae-9c-nDt"/>
                             <constraint firstItem="IFO-cd-n9W" firstAttribute="leading" secondItem="dp7-OF-8DF" secondAttribute="leading" constant="16" id="cB4-l2-THK"/>
                             <constraint firstItem="dp7-OF-8DF" firstAttribute="trailing" secondItem="IFO-cd-n9W" secondAttribute="trailing" constant="16" id="rtj-lU-56e"/>
+                            <constraint firstItem="IFO-cd-n9W" firstAttribute="top" secondItem="dp7-OF-8DF" secondAttribute="top" constant="8" id="wjr-NR-TTa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Loan" image="creditcard" catalog="system" id="RWH-wW-cit"/>
+                    <connections>
+                        <outlet property="monthlyPaymentLabel" destination="9Df-UZ-WDs" id="TNA-bA-Bws"/>
+                        <outlet property="nperTextField" destination="Hi4-jF-kJd" id="2Ty-hm-PKP"/>
+                        <outlet property="pvTextField" destination="WMt-cn-RqB" id="yW0-bO-0zB"/>
+                        <outlet property="rateTextField" destination="fFL-fB-E0W" id="H9j-hY-Yww"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="54R-Hf-HFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
